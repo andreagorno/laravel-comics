@@ -1,6 +1,83 @@
 header {
     .top-header {
         background-color: $bg-blue;
-        height: 100px;
+
+        .container {
+            text-align: right;
+
+            ul {
+                list-style: none;
+
+                li {
+                    display: inline-block;
+                    margin: 10px;
+
+                    a {
+                        text-transform: uppercase;
+                        color: white;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-header {
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+
+            .logo {
+                img {
+                    height: 70px;
+                }
+            }
+
+            .pages {
+                ul {
+                    list-style: none;
+
+                    li {
+                        display: inline-block;
+
+                        a {
+                            display: inline-block;
+                            color: #5F5F62;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            font-size: 14px;
+                            margin: 10px;
+                            line-height: 74px;
+
+                            &.active,
+                            &:hover {
+                                color: $bg-blue;
+                                border-bottom: 3px solid $bg-blue;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .search-bar {
+                input {
+                    text-align: right;
+                    width: 90px;
+                    border: none;
+                    border-bottom: 2px solid $bg-blue;
+                    font-size: 16px;
+                    color: #5F5F62;
+                    
+                }
+            }
+        }
+    }
+
+    .jumbotron {
+        height: 400px;
+        background-image: url('../../../public/img/jumbotron.jpg');
+        background-size: cover;
     }
 }
