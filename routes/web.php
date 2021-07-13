@@ -18,3 +18,9 @@ Route::get('/', function () {
 
     return view('home', ["comics" => $comics]);
 });
+
+Route::get('/single', function () {
+    $comics = config("comics");
+
+    return view('single', ["comics" => $comics]);
+});

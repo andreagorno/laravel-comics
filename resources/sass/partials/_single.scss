@@ -1,0 +1,75 @@
+#section-single {
+    background-color: white;
+
+    .bluebanner {
+        height: 100px;
+        background-color: $bg-blue;
+    }
+
+    .info {
+        display: flex;
+        margin: 50px 0 ;
+        
+
+        .comic-info {
+            flex-grow: 1;
+            margin-right: 30px;
+
+            h2 {
+               color: #154E6B;
+               text-transform: uppercase; 
+               margin-bottom: 20px;
+            }
+
+            p {
+                margin-top: 10px;
+                color: grey;
+                font-size: 14px;
+                line-height: 25px;
+            }
+
+            .pricing {
+                display: flex;
+                background-color: #55BA59;
+                color: white;
+
+                span {
+                    padding: 10px;
+                    font-size: 14px;
+                }
+
+                span:first-child {
+                    flex-grow: 1;
+
+                    span {
+                        color: rgba($color: #FFFFFF, $alpha: 0.7);
+                    }
+                }
+                
+                span:nth-child(2) {
+                    text-transform: uppercase;
+                    color: rgba($color: #FFFFFF, $alpha: 0.7);
+                    margin-right: 10px;
+                }
+
+                .available {
+                    padding-left: 20px;
+                    border-left: 1px solid rgba($color: grey, $alpha: 0.6);
+                }
+            }
+        }
+
+        .adv {
+            img {
+                height: 200px;
+            }
+            p {
+                text-align: right;
+                color: #303030;
+                font-size: 12px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+    }
+}
