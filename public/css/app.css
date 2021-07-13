@@ -3130,3 +3130,105 @@ header .jumbotron {
   background-size: cover;
 }
 
+section {
+  background-color: #1C1C1C;
+}
+
+section .container {
+  position: relative;
+}
+
+section .container .title {
+  position: absolute;
+  top: -25px;
+  left: -5px;
+  display: inline-block;
+  background-color: #0282F9;
+}
+
+section .container .title h2 {
+  padding: 10px 30px;
+  text-transform: uppercase;
+  display: inline-block;
+  color: white;
+}
+
+section .container .comics {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+section .container .comics .comic {
+  width: calc(100% / 6 - 20px);
+  max-width: 200px;
+  height: 200px;
+  margin: 40px 0;
+  background-color: red;
+}
+
+section .container .comics .comic img {
+  height: 100%;
+  width: 100%;
+}
+
+section .container .comics .comic h3 {
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+section .container .get-more {
+  display: flex;
+  justify-content: center;
+}
+
+section .container .get-more button {
+  width: 200px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: #0282F9;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  border: none;
+}
+
+section .links {
+  background-color: #0282F9;
+}
+
+section .links .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+section .links .container div {
+  margin: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .links .container div img {
+  height: 50px;
+}
+
+section .links .container div .visa {
+  height: 30px;
+}
+
+section .links .container div span {
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
